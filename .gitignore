@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+img/aus_map-clean.png
+img/US-MAP-CLEAN.png
+data/attacks.csv
