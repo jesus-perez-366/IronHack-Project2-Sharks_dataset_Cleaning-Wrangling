@@ -22,6 +22,8 @@ Below an example of a plot created for the study:
 
 <div style="text-align:center"><img src="img/usa_map_cases.png" height="400" alt="Screenshot"/></div>
 
+<div style="text-align:center"><img src="img/top_species.png" height="300" alt="Screenshot"/></div>
+
 
 ## Environment
  Python3 on Ubuntu 20.04

@@ -169,7 +169,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2016,6.0,USA,North Carolina,0.0,0.0,
 2016,6.0,USA,Florida,0.0,0.0,
 2016,6.0,AUSTRALIA,Western Australia,1.0,0.0,
-2016,6.0,AUSTRALIA,New South Wales,,0.0,bull
+2016,6.0,AUSTRALIA,New South Wales,,0.0,
 2016,5.0,AUSTRALIA,Western Australia,1.0,0.0,white
 2016,5.0,USA,California,0.0,0.0,
 2016,5.0,USA,Florida,0.0,0.0,
@@ -200,7 +200,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2016,1.0,AUSTRALIA,Queensland,0.0,0.0,blacktip
 2016,1.0,AUSTRALIA,Queensland,0.0,0.0,
 2015,12.0,USA,Hawaii,0.0,0.0,
-2015,12.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2015,12.0,AUSTRALIA,New South Wales,0.0,0.0,
 2015,12.0,AUSTRALIA,New South Wales,0.0,0.0,white
 2015,11.0,USA,Florida,0.0,0.0,
 2015,11.0,USA,Florida,0.0,0.0,
@@ -247,7 +247,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2015,7.0,USA,Florida,0.0,0.0,spinner
 2015,7.0,AUSTRALIA,Tasmania,1.0,0.0,white
 2015,7.0,USA,California,0.0,1.0,mako
-2015,7.0,AUSTRALIA,Victoria,0.0,0.0,bull
+2015,7.0,AUSTRALIA,Victoria,0.0,0.0,
 2015,7.0,USA,California,0.0,0.0,white
 2015,7.0,USA,North Carolina,0.0,0.0,
 2015,7.0,AUSTRALIA,New South Wales,0.0,0.0,white
@@ -357,7 +357,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2014,6.0,AUSTRALIA,South Australia,0.0,0.0,
 2014,6.0,AUSTRALIA,Western Australia,0.0,1.0,lemon
 2014,6.0,USA,Delaware,0.0,0.0,sandbar
-2014,6.0,AUSTRALIA,South Australia,0.0,0.0,bull
+2014,6.0,AUSTRALIA,South Australia,0.0,0.0,
 2014,6.0,USA,Texas,0.0,0.0,
 2014,6.0,USA,Florida,0.0,0.0,bull
 2014,6.0,AUSTRALIA,New South Wales,0.0,0.0,
@@ -451,7 +451,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2013,4.0,USA,Florida,0.0,0.0,bull
 2013,4.0,USA,Florida,0.0,0.0,
 2013,4.0,USA,Hawaii,0.0,0.0,
-2013,3.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+2013,3.0,AUSTRALIA,Western Australia,0.0,0.0,
 2013,2.0,USA,Hawaii,0.0,0.0,reef
 2013,2.0,USA,Hawaii,0.0,0.0,reef
 2013,2.0,USA,Florida,0.0,0.0,blacktip
@@ -707,7 +707,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2009,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 2009,4.0,USA,California,0.0,0.0,white
 2009,4.0,USA,Florida,0.0,0.0,
-2009,3.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2009,3.0,AUSTRALIA,New South Wales,0.0,0.0,
 2009,3.0,AUSTRALIA,New South Wales,0.0,0.0,
 2009,3.0,AUSTRALIA,New South Wales,0.0,0.0,
 2009,3.0,USA,Florida,0.0,0.0,
@@ -732,14 +732,14 @@ year,month,country,area,was_fatal,was_provoked,species
 2008,12.0,AUSTRALIA,Western Australia,1.0,0.0,white
 2008,12.0,USA,California,0.0,0.0,white
 2008,12.0,AUSTRALIA,New South Wales,0.0,0.0,white
-2008,11.0,AUSTRALIA,South Australia,0.0,0.0,bull
+2008,11.0,AUSTRALIA,South Australia,0.0,0.0,
 2008,10.0,AUSTRALIA,New South Wales,0.0,1.0,nurse
 2008,10.0,AUSTRALIA,Northern Territory,0.0,1.0,reef
 2008,10.0,AUSTRALIA,New South Wales,0.0,0.0,
 2008,10.0,USA,Florida,0.0,0.0,
 2008,9.0,USA,Florida,0.0,0.0,
 2008,9.0,USA,Florida,0.0,0.0,
-2008,9.0,AUSTRALIA,Northern Territory,0.0,1.0,bull
+2008,9.0,AUSTRALIA,Northern Territory,0.0,1.0,
 2008,9.0,USA,Florida,0.0,0.0,
 2008,9.0,USA,Hawaii,0.0,0.0,tiger
 2008,9.0,USA,California,0.0,0.0,white
@@ -808,7 +808,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2007,11.0,USA,Florida,0.0,0.0,
 2007,10.0,USA,Hawaii,0.0,0.0,tiger
 2007,10.0,AUSTRALIA,New South Wales,0.0,0.0,white
-2007,10.0,AUSTRALIA,Queensland,0.0,0.0,bull
+2007,10.0,AUSTRALIA,Queensland,0.0,0.0,
 2007,10.0,USA,California,0.0,0.0,
 2007,10.0,USA,Florida,0.0,0.0,blacktip
 2007,9.0,USA,California,0.0,0.0,
@@ -843,7 +843,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2007,7.0,USA,California,0.0,0.0,white
 2007,7.0,USA,California,0.0,0.0,white
 2007,7.0,USA,Hawaii,0.0,0.0,
-2007,7.0,AUSTRALIA,Territory of Cocos (Keeling) Islands,0.0,0.0,bull
+2007,7.0,AUSTRALIA,Territory of Cocos (Keeling) Islands,0.0,0.0,
 2007,7.0,USA,North Carolina,0.0,0.0,
 2007,7.0,USA,North Carolina,0.0,0.0,
 2007,7.0,USA,Florida,0.0,0.0,
@@ -894,7 +894,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2006,9.0,USA,Florida,0.0,0.0,
 2006,9.0,USA,Florida,0.0,0.0,
 2006,8.0,USA,Oregon,0.0,0.0,
-2006,8.0,AUSTRALIA,South Australia,0.0,0.0,bull
+2006,8.0,AUSTRALIA,South Australia,0.0,0.0,
 2006,8.0,USA,North Carolina,0.0,0.0,
 2006,7.0,USA,Kentucky,0.0,1.0,
 2006,7.0,USA,Oregon,0.0,0.0,white
@@ -927,10 +927,10 @@ year,month,country,area,was_fatal,was_provoked,species
 2006,4.0,USA,Florida,0.0,0.0,
 2006,4.0,USA,Florida,0.0,0.0,
 2006,4.0,USA,Florida,0.0,1.0,bull
-2006,4.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2006,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 2006,4.0,USA,Florida,0.0,0.0,
 2006,3.0,USA,Hawaii,0.0,0.0,tiger
-2006,3.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2006,3.0,AUSTRALIA,New South Wales,0.0,0.0,
 2006,2.0,USA,Hawaii,0.0,0.0,
 2006,2.0,AUSTRALIA,Queensland,0.0,0.0,
 2006,2.0,AUSTRALIA,Queensland,0.0,0.0,
@@ -961,7 +961,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2005,10.0,USA,Florida,0.0,0.0,
 2005,9.0,AUSTRALIA,New South Wales,0.0,0.0,tiger
 2005,9.0,AUSTRALIA,South Australia,0.0,0.0,white
-2005,9.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+2005,9.0,AUSTRALIA,Western Australia,0.0,0.0,
 2005,9.0,USA,South Carolina,0.0,0.0,
 2005,9.0,USA,South Carolina,1.0,0.0,
 2005,9.0,AUSTRALIA,New South Wales,0.0,0.0,
@@ -993,7 +993,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2005,4.0,AUSTRALIA,New South Wales,0.0,1.0,mako
 2005,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 2005,4.0,AUSTRALIA,Northern Territory,0.0,0.0,
-2005,4.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2005,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 2005,4.0,USA,Florida,0.0,0.0,blacktip
 2005,4.0,USA,Texas,0.0,0.0,
 2005,4.0,USA,Florida,0.0,0.0,hammerhead
@@ -1005,11 +1005,11 @@ year,month,country,area,was_fatal,was_provoked,species
 2005,2.0,USA,Hawaii,0.0,0.0,tiger
 2005,2.0,USA,Florida,0.0,0.0,caribbean reef
 2005,1.0,AUSTRALIA,Victoria,0.0,1.0,
-2005,1.0,AUSTRALIA,Victoria,0.0,1.0,bull
+2005,1.0,AUSTRALIA,Victoria,0.0,1.0,
 2004,12.0,AUSTRALIA,South Australia,1.0,0.0,white
 2004,12.0,AUSTRALIA,Queensland,1.0,0.0,bull
 2004,11.0,USA,California,0.0,0.0,white
-2004,10.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2004,10.0,AUSTRALIA,New South Wales,0.0,0.0,
 2004,10.0,USA,California,0.0,0.0,white
 2004,10.0,USA,Hawaii,0.0,0.0,tiger
 2004,10.0,USA,California,0.0,0.0,
@@ -1032,7 +1032,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2004,7.0,USA,Alabama,0.0,0.0,
 2004,6.0,USA,California,0.0,0.0,white
 2004,6.0,USA,Florida,0.0,0.0,
-2004,6.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+2004,6.0,AUSTRALIA,Western Australia,0.0,0.0,
 2004,6.0,USA,Florida,0.0,0.0,
 2004,5.0,USA,Texas,0.0,0.0,
 2004,5.0,USA,California,0.0,0.0,
@@ -1047,7 +1047,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2004,3.0,USA,Florida,0.0,0.0,
 2004,3.0,USA,Hawaii,0.0,0.0,
 2004,3.0,USA,Hawaii,0.0,0.0,tiger
-2004,3.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+2004,3.0,AUSTRALIA,Western Australia,0.0,0.0,
 2004,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 2004,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 2004,1.0,AUSTRALIA,Western Australia,0.0,0.0,white
@@ -1113,7 +1113,7 @@ year,month,country,area,was_fatal,was_provoked,species
 2003,2.0,USA,Florida,0.0,0.0,
 2003,2.0,AUSTRALIA,New South Wales,0.0,0.0,nurse
 2003,2.0,AUSTRALIA,Queensland,1.0,0.0,bull
-2003,1.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+2003,1.0,AUSTRALIA,Western Australia,0.0,0.0,
 2002,12.0,AUSTRALIA,Queensland,0.0,0.0,hammerhead
 2002,12.0,AUSTRALIA,Queensland,0.0,0.0,wobbegong
 2002,12.0,AUSTRALIA,Queensland,1.0,0.0,bull
@@ -1169,14 +1169,14 @@ year,month,country,area,was_fatal,was_provoked,species
 2002,3.0,USA,Florida,0.0,0.0,
 2002,3.0,USA,Florida,0.0,0.0,nurse
 2002,3.0,USA,Florida,0.0,0.0,spinner
-2002,2.0,AUSTRALIA,Queensland,0.0,0.0,bull
+2002,2.0,AUSTRALIA,Queensland,0.0,0.0,
 2002,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 2002,1.0,AUSTRALIA,New South Wales,0.0,0.0,tiger
 2002,1.0,AUSTRALIA,Western Australia,0.0,0.0,
 2002,1.0,USA,Hawaii,0.0,0.0,tiger
-2001,11.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2001,11.0,AUSTRALIA,New South Wales,0.0,0.0,
 2001,11.0,USA,Hawaii,0.0,0.0,
-2001,10.0,AUSTRALIA,Queensland,0.0,0.0,bull
+2001,10.0,AUSTRALIA,Queensland,0.0,0.0,
 2001,9.0,AUSTRALIA,Queensland,0.0,0.0,white
 2001,9.0,USA,Florida,0.0,1.0,
 2001,9.0,USA,Florida,0.0,0.0,
@@ -1232,17 +1232,17 @@ year,month,country,area,was_fatal,was_provoked,species
 2001,4.0,USA,Florida,0.0,0.0,spinner
 2001,4.0,AUSTRALIA,New South Wales,0.0,1.0,wobbegong
 2001,4.0,USA,Florida,0.0,0.0,
-2001,4.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2001,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 2001,3.0,USA,Hawaii,0.0,0.0,
 2001,3.0,USA,Florida,0.0,0.0,spinner
 2001,2.0,AUSTRALIA,Western Australia,0.0,0.0,white
-2001,2.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+2001,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 2001,1.0,AUSTRALIA,New South Wales,0.0,0.0,
 2001,1.0,AUSTRALIA,South Australia,0.0,0.0,white
 2001,1.0,USA,California,0.0,0.0,
 2000,12.0,AUSTRALIA,Queensland,0.0,0.0,
 2000,12.0,AUSTRALIA,South Australia,0.0,0.0,white
-2000,12.0,AUSTRALIA,Queensland,0.0,0.0,bull
+2000,12.0,AUSTRALIA,Queensland,0.0,0.0,
 2000,11.0,AUSTRALIA,Queensland,0.0,0.0,tiger
 2000,11.0,USA,Florida,0.0,0.0,
 2000,11.0,AUSTRALIA,Western Australia,0.0,0.0,white
@@ -1435,11 +1435,11 @@ year,month,country,area,was_fatal,was_provoked,species
 1996,4.0,AUSTRALIA,New South Wales,0.0,0.0,wobbegong
 1996,3.0,AUSTRALIA,Queensland,0.0,0.0,tiger
 1996,3.0,AUSTRALIA,New South Wales,0.0,0.0,
-1996,2.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1996,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 1996,2.0,USA,Missouri,0.0,1.0,nurse
 1996,2.0,AUSTRALIA,New South Wales,0.0,0.0,reef
 1996,1.0,USA,Florida,0.0,1.0,nurse
-1996,1.0,AUSTRALIA,Queensland,0.0,0.0,bull
+1996,1.0,AUSTRALIA,Queensland,0.0,0.0,
 1996,1.0,USA,Hawaii,0.0,0.0,tiger
 1996,1.0,AUSTRALIA,Western Australia,,0.0,
 1996,1.0,AUSTRALIA,New South Wales,0.0,0.0,mako
@@ -1492,7 +1492,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1995,4.0,USA,Florida,0.0,0.0,
 1995,4.0,AUSTRALIA,New South Wales,0.0,0.0,wobbegong
 1995,3.0,AUSTRALIA,New South Wales,0.0,0.0,
-1995,3.0,AUSTRALIA,South Australia,0.0,0.0,bull
+1995,3.0,AUSTRALIA,South Australia,0.0,0.0,
 1995,,AUSTRALIA,Queensland,0.0,1.0,
 1995,,USA,South Carolina,,0.0,
 1994,12.0,USA,Hawaii,0.0,0.0,
@@ -1544,7 +1544,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1993,3.0,USA,Florida,0.0,0.0,
 1993,3.0,USA,Hawaii,0.0,0.0,tiger
 1993,3.0,USA,California,0.0,0.0,white
-1993,2.0,AUSTRALIA,Queensland,0.0,1.0,bull
+1993,2.0,AUSTRALIA,Queensland,0.0,1.0,
 1993,1.0,AUSTRALIA,Queensland,0.0,0.0,
 1993,1.0,USA,Oregon,0.0,0.0,white
 1993,,USA,Florida,0.0,0.0,lemon
@@ -1569,10 +1569,10 @@ year,month,country,area,was_fatal,was_provoked,species
 1992,8.0,USA,Florida,0.0,1.0,nurse
 1992,7.0,USA,Florida,0.0,0.0,
 1992,3.0,USA,Hawaii,0.0,0.0,tiger
-1992,3.0,AUSTRALIA,Victoria,0.0,0.0,bull
+1992,3.0,AUSTRALIA,Victoria,0.0,0.0,
 1992,3.0,USA,Oregon,0.0,0.0,white
 1992,2.0,USA,Hawaii,1.0,0.0,tiger
-1992,1.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1992,1.0,AUSTRALIA,New South Wales,0.0,0.0,
 1991,12.0,USA,California,0.0,0.0,white
 1991,11.0,USA,Hawaii,1.0,0.0,tiger
 1991,11.0,USA,Hawaii,0.0,0.0,tiger
@@ -1645,7 +1645,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1989,9.0,USA,California,0.0,1.0,blue
 1989,8.0,AUSTRALIA,Queensland,0.0,1.0,nurse
 1989,8.0,USA,Florida,0.0,0.0,
-1989,8.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1989,8.0,AUSTRALIA,New South Wales,0.0,0.0,
 1989,8.0,AUSTRALIA,Queensland,0.0,1.0,white
 1989,7.0,USA,Florida,0.0,0.0,
 1989,7.0,USA,Texas,0.0,0.0,
@@ -1710,7 +1710,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1987,5.0,AUSTRALIA,New South Wales,0.0,1.0,
 1987,4.0,USA,Texas,0.0,0.0,
 1987,4.0,USA,Hawaii,1.0,0.0,
-1987,3.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+1987,3.0,AUSTRALIA,Western Australia,0.0,0.0,
 1987,2.0,USA,Florida,0.0,0.0,spinner
 1987,1.0,AUSTRALIA,Queensland,0.0,0.0,
 1986,12.0,USA,Florida,0.0,0.0,blacktip
@@ -1729,7 +1729,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1986,7.0,USA,South Carolina,0.0,0.0,
 1986,5.0,AUSTRALIA,New South Wales,0.0,0.0,wobbegong
 1986,4.0,USA,Hawaii,1.0,0.0,
-1986,2.0,AUSTRALIA,Victoria,0.0,0.0,bull
+1986,2.0,AUSTRALIA,Victoria,0.0,0.0,
 1986,1.0,USA,Florida,0.0,0.0,blacktip
 1986,,USA,California,0.0,0.0,
 1985,12.0,USA,North Carolina,0.0,0.0,sandtiger
@@ -1930,7 +1930,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1975,7.0,USA,California,0.0,0.0,white
 1975,7.0,USA,California,0.0,0.0,white
 1975,7.0,USA,Florida,0.0,0.0,
-1975,7.0,AUSTRALIA,Western Australia,0.0,1.0,bull
+1975,7.0,AUSTRALIA,Western Australia,0.0,1.0,
 1975,7.0,USA,Florida,0.0,0.0,
 1975,6.0,USA,South Carolina,0.0,0.0,
 1975,6.0,USA,South Carolina,0.0,0.0,
@@ -1941,7 +1941,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1975,5.0,USA,Florida,0.0,0.0,
 1975,3.0,AUSTRALIA,Queensland,0.0,0.0,
 1975,3.0,USA,Florida,0.0,0.0,
-1975,3.0,AUSTRALIA,Queensland,0.0,1.0,bull
+1975,3.0,AUSTRALIA,Queensland,0.0,1.0,
 1975,2.0,AUSTRALIA,South Australia,1.0,0.0,white
 1975,2.0,AUSTRALIA,Victoria,0.0,0.0,carpet
 1975,2.0,AUSTRALIA,Queensland,0.0,0.0,
@@ -1962,7 +1962,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1974,5.0,USA,California,0.0,0.0,white
 1974,4.0,USA,Florida,0.0,0.0,
 1974,1.0,AUSTRALIA,South Australia,1.0,0.0,white
-1974,,AUSTRALIA,Western Australia,0.0,0.0,bull
+1974,,AUSTRALIA,Western Australia,0.0,0.0,
 1973,12.0,USA,Hawaii,0.0,0.0,
 1973,11.0,AUSTRALIA,Western Australia,0.0,0.0,
 1973,11.0,USA,Florida,0.0,0.0,
@@ -1975,7 +1975,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1972,12.0,AUSTRALIA,Queensland,0.0,0.0,
 1972,12.0,AUSTRALIA,New South Wales,0.0,1.0,
 1972,10.0,AUSTRALIA,Queensland,0.0,0.0,
-1972,10.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1972,10.0,AUSTRALIA,New South Wales,0.0,0.0,
 1972,10.0,USA,US Virgin Islands,1.0,0.0,whitetip
 1972,10.0,USA,Florida,0.0,0.0,
 1972,9.0,USA,California,0.0,0.0,white
@@ -2044,12 +2044,12 @@ year,month,country,area,was_fatal,was_provoked,species
 1968,7.0,USA,South Carolina,0.0,0.0,
 1968,6.0,USA,Florida,0.0,0.0,
 1968,4.0,USA,Florida,0.0,0.0,silky
-1968,4.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1968,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 1968,4.0,AUSTRALIA,New South Wales,0.0,1.0,
 1968,3.0,USA,Florida,0.0,0.0,
 1968,2.0,USA,Florida,0.0,0.0,
 1968,2.0,AUSTRALIA,Western Australia,0.0,0.0,
-1968,2.0,AUSTRALIA,South Australia,0.0,0.0,bull
+1968,2.0,AUSTRALIA,South Australia,0.0,0.0,
 1968,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 1967,12.0,AUSTRALIA,Victoria,1.0,0.0,
 1967,12.0,USA,,0.0,1.0,
@@ -2062,7 +2062,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1967,8.0,USA,Florida,0.0,0.0,nurse
 1967,7.0,USA,Florida,0.0,0.0,
 1967,6.0,USA,Florida,0.0,1.0,nurse
-1967,5.0,AUSTRALIA,South Australia,0.0,1.0,bull
+1967,5.0,AUSTRALIA,South Australia,0.0,1.0,
 1967,5.0,AUSTRALIA,,0.0,1.0,nurse
 1967,3.0,AUSTRALIA,Victoria,0.0,1.0,nurse
 1967,1.0,AUSTRALIA,Victoria,0.0,1.0,sand
@@ -2070,7 +2070,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1966,12.0,AUSTRALIA,New South Wales,0.0,1.0,nurse
 1966,12.0,AUSTRALIA,New South Wales,0.0,0.0,nurse
 1966,12.0,AUSTRALIA,New South Wales,0.0,0.0,
-1966,9.0,AUSTRALIA,Queensland,0.0,0.0,bull
+1966,9.0,AUSTRALIA,Queensland,0.0,0.0,
 1966,9.0,USA,Hawaii,0.0,1.0,
 1966,9.0,AUSTRALIA,Western Australia,,1.0,
 1966,9.0,AUSTRALIA,Western Australia,0.0,0.0,mako
@@ -2140,7 +2140,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1963,4.0,USA,US Virgin Islands,1.0,0.0,galapagos
 1963,4.0,AUSTRALIA,Western Australia,0.0,0.0,
 1963,4.0,USA,Hawaii,0.0,0.0,
-1963,2.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1963,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 1963,1.0,AUSTRALIA,New South Wales,1.0,0.0,bull
 1963,1.0,AUSTRALIA,South Australia,0.0,1.0,white
 1962,12.0,AUSTRALIA,South Australia,1.0,0.0,white
@@ -2166,14 +2166,14 @@ year,month,country,area,was_fatal,was_provoked,species
 1962,6.0,USA,Florida,0.0,0.0,
 1962,5.0,USA,Florida,0.0,0.0,
 1962,5.0,USA,California,1.0,,
-1962,4.0,AUSTRALIA,Queensland,0.0,1.0,bull
-1962,3.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1962,4.0,AUSTRALIA,Queensland,0.0,1.0,
+1962,3.0,AUSTRALIA,New South Wales,0.0,0.0,
 1962,2.0,AUSTRALIA,Queensland,0.0,0.0,
 1962,2.0,AUSTRALIA,Queensland,0.0,0.0,
-1962,1.0,AUSTRALIA,New South Wales,0.0,1.0,bull
+1962,1.0,AUSTRALIA,New South Wales,0.0,1.0,
 1962,1.0,USA,California,0.0,0.0,white
 1962,1.0,AUSTRALIA,New South Wales,0.0,1.0,nurse
-1962,1.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1962,1.0,AUSTRALIA,New South Wales,0.0,0.0,
 1962,1.0,AUSTRALIA,South Australia,0.0,0.0,nurse
 1962,1.0,AUSTRALIA,South Australia,0.0,0.0,white
 1962,1.0,AUSTRALIA,Queensland,0.0,1.0,
@@ -2205,7 +2205,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1961,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 1961,4.0,AUSTRALIA,Victoria,0.0,0.0,nurse
 1961,4.0,AUSTRALIA,Western Australia,0.0,1.0,wobbegong
-1961,3.0,AUSTRALIA,South Australia,0.0,0.0,bull
+1961,3.0,AUSTRALIA,South Australia,0.0,0.0,
 1961,3.0,AUSTRALIA,Victoria,0.0,0.0,
 1961,3.0,AUSTRALIA,Western Australia,0.0,1.0,
 1961,3.0,AUSTRALIA,South Australia,0.0,0.0,white
@@ -2242,11 +2242,11 @@ year,month,country,area,was_fatal,was_provoked,species
 1960,5.0,USA,California,0.0,0.0,white
 1960,5.0,USA,Florida,0.0,1.0,lemon
 1960,4.0,USA,California,0.0,0.0,white
-1960,4.0,AUSTRALIA,Western Australia,0.0,1.0,bull
+1960,4.0,AUSTRALIA,Western Australia,0.0,1.0,
 1960,4.0,AUSTRALIA,New South Wales,0.0,0.0,white
 1960,4.0,AUSTRALIA,Western Australia,0.0,1.0,sandtiger
 1960,4.0,AUSTRALIA,Victoria,0.0,0.0,
-1960,4.0,AUSTRALIA,New South Wales,0.0,0.0,bull
+1960,4.0,AUSTRALIA,New South Wales,0.0,0.0,
 1960,4.0,AUSTRALIA,South Australia,0.0,1.0,white
 1960,3.0,USA,Florida,0.0,0.0,
 1960,2.0,AUSTRALIA,Tasmania,0.0,0.0,
@@ -2368,7 +2368,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1955,2.0,AUSTRALIA,New South Wales,1.0,0.0,white
 1955,2.0,AUSTRALIA,New South Wales,0.0,0.0,
 1955,2.0,AUSTRALIA,New South Wales,0.0,0.0,
-1955,1.0,AUSTRALIA,New South Wales,1.0,0.0,bull
+1955,1.0,AUSTRALIA,New South Wales,1.0,0.0,
 1955,,USA,Florida,,0.0,
 1954,12.0,AUSTRALIA,Victoria,1.0,0.0,
 1954,11.0,USA,Wake Island,0.0,0.0,blacktip reef
@@ -2456,7 +2456,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1949,8.0,AUSTRALIA,Tasmania,0.0,0.0,
 1949,7.0,USA,South Carolina,0.0,0.0,
 1949,7.0,USA,California,0.0,1.0,
-1949,5.0,AUSTRALIA,Western Australia,0.0,0.0,bull
+1949,5.0,AUSTRALIA,Western Australia,0.0,0.0,
 1949,5.0,AUSTRALIA,New South Wales,0.0,1.0,
 1949,4.0,AUSTRALIA,Queensland,0.0,1.0,
 1949,4.0,AUSTRALIA,Queensland,1.0,0.0,
@@ -2549,7 +2549,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1940,1.0,AUSTRALIA,Queensland,0.0,0.0,
 1939,12.0,AUSTRALIA,Queensland,1.0,0.0,
 1939,11.0,AUSTRALIA,New South Wales,0.0,0.0,
-1939,11.0,AUSTRALIA,New South Wales,0.0,1.0,bull
+1939,11.0,AUSTRALIA,New South Wales,0.0,1.0,
 1939,11.0,AUSTRALIA,New South Wales,,0.0,
 1939,11.0,AUSTRALIA,New South Wales,,0.0,
 1939,10.0,AUSTRALIA,Queensland,0.0,0.0,tiger
@@ -2579,7 +2579,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1937,10.0,AUSTRALIA,New South Wales,0.0,0.0,
 1937,8.0,AUSTRALIA,Torres Strait,0.0,0.0,tiger
 1937,7.0,AUSTRALIA,Northern Territory,1.0,0.0,
-1937,6.0,AUSTRALIA,New South Wales,0.0,1.0,bull
+1937,6.0,AUSTRALIA,New South Wales,0.0,1.0,
 1937,6.0,USA,Texas,1.0,0.0,
 1937,5.0,USA,Texas,0.0,1.0,
 1937,5.0,AUSTRALIA,Queensland,1.0,0.0,
@@ -2901,7 +2901,7 @@ year,month,country,area,was_fatal,was_provoked,species
 1912,7.0,USA,South Carolina,0.0,0.0,
 1912,2.0,AUSTRALIA,Western Australia,0.0,1.0,
 1912,2.0,AUSTRALIA,New South Wales,0.0,0.0,
-1912,1.0,AUSTRALIA,New South Wales,1.0,0.0,bull
+1912,1.0,AUSTRALIA,New South Wales,1.0,0.0,
 1912,1.0,AUSTRALIA,New South Wales,0.0,0.0,
 1912,1.0,AUSTRALIA,Queensland,1.0,0.0,
 1911,10.0,USA,South Carolina,1.0,0.0,

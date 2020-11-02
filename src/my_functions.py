@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-class clean():
-     '''
+class Clean():
+    '''
     Collection of functions used for cleaning
     '''
 
@@ -213,7 +213,7 @@ class clean():
 
 
 
-class plot():
+class Plot():
 
     '''
     Collection of functions used for plotting
@@ -329,8 +329,8 @@ class plot():
 
 
         #To get coordinates to plot on map
-        df_temp['x_axis'] = df_temp.area.apply(lambda x: plot.get_coordin(x,0)) 
-        df_temp['y_axis'] = df_temp.area.apply(lambda x: plot.get_coordin(x,1))
+        df_temp['x_axis'] = df_temp.area.apply(lambda x: Plot.get_coordin(x,0)) 
+        df_temp['y_axis'] = df_temp.area.apply(lambda x: Plot.get_coordin(x,1))
 
         fig = plt.figure(figsize = (15, 10))
         ax = fig.add_subplot(111)
@@ -428,7 +428,7 @@ class plot():
         df_temp = df_temp[(df_temp.year >= initial_year) &(df_temp.year <= ending_year)]
 
         
-        sns.lineplot(x = df_temp.year, y = df_temp.month, hue = df_temp.country, palette = plot.my_palette)
+        sns.lineplot(x = df_temp.year, y = df_temp.month, hue = df_temp.country, palette = Plot.my_palette)
 
         plt.xlabel('') #To remove countries 
         plt.ylabel('Number of incidents') #To remove countries 
@@ -473,10 +473,10 @@ class plot():
 
         fig = plt.figure(figsize=(10, 6))
         ax = fig.add_subplot(111)
-        sns.barplot(x = df_temp2.species, y = df_temp2.shark_perc, hue = df_temp2.country, palette = plot.my_palette) #this plots bar plot with shark percentage
+        sns.barplot(x = df_temp2.species, y = df_temp2.shark_perc, hue = df_temp2.country, palette = Plot.my_palette) #this plots bar plot with shark percentage
 
         ax2 = ax.twinx() #this to share plot
-        sns.lineplot(ax = ax2, x = new_df.species, y = new_df.rate_fatal, linewidth = 3, linestyle = 'dashed', hue = new_df.country, palette = plot.my_palette)
+        sns.lineplot(ax = ax2, x = new_df.species, y = new_df.rate_fatal, linewidth = 3, linestyle = 'dashed', hue = new_df.country, palette = Plot.my_palette)
 
         ax2.grid(False) #to remove axis on the right
 
@@ -493,9 +493,79 @@ class plot():
         ax.legend(title = 'Rate of appearance',loc = 'upper right')
         ax2.legend(title = 'Rate of fatality', loc = 'center right')
 
+
+        ###### To include legend with shark pictures ####
+        ## From this thread with some changes https://stackoverflow.com/questions/26029592/insert-image-in-matplotlib-legend
+
+        from matplotlib.transforms import TransformedBbox
+        from matplotlib.transforms import Bbox
+        from matplotlib.image import BboxImage
+        from matplotlib.legend_handler import HandlerBase
+
+        ax3 = ax2.twinx() #this to share plot
+        plot = plt.scatter([], []) #dummy ax
+        ax3.yaxis.set_visible(False)
+
+
+
+        class ImageHandler(HandlerBase):
+            def create_artists(self, legend, orig_handle,
+                            xdescent, ydescent, width, height, fontsize,
+                            trans):
+
+                # enlarge the image by these margins
+                sx, sy = self.image_stretch 
+
+                # create a bounding box to house the image
+                bb = Bbox.from_bounds(xdescent - sx,
+                                    ydescent - sy,
+                                    width + sx,
+                                    height + sy)
+
+                tbb = TransformedBbox(bb, trans)
+                image = BboxImage(tbb)
+                image.set_data(self.image_data)
+
+                self.update_prop(image, orig_handle, legend)
+
+                return [image]
+
+            def set_image(self, image_path, image_stretch=(10, 10)):
+
+        
+                self.image_data = plt.imread(image_path)
+
+                self.image_stretch = image_stretch
+
+        shark_list = new_df.species.unique()
+        list_plot = []
+        handler_map = {}
+        for shark in shark_list:
+            plot = plt.scatter([], [])
+            list_plot.append(plot)
+            custom_handler = ImageHandler()
+            custom_handler.set_image(f"img/shark_pics/{shark}.jpg",image_stretch=(75, 75))
+            handler_map[plot]=custom_handler
+     
+  
+        plt.legend(list_plot,
+                shark_list,
+                handler_map=handler_map,
+                labelspacing=8,
+                columnspacing = 9,
+                frameon=False,
+                bbox_to_anchor=(1.6, 1), loc='upper right',
+                ncol = 2)
+
+
+        ### End of legend with pictures
+
         filename = 'img/top_species.png'
 
-        plt.savefig(filename,bbox_inches='tight',pad_inches=0.2)
+        #ax2.legend(title = 'Rate of fatality', loc = 'center right')
+
+
+        plt.savefig(filename,bbox_inches='tight',pad_inches=0.3)
 
  
 
