@@ -5,22 +5,40 @@ import seaborn as sns
 import pandas as pd
 
 class clean():
+     '''
+    Collection of functions used for cleaning
+    '''
 
 
     def clean_col_names(name):
+        '''
+        Combination of methods to clean column names
+
+        Args:
+            name(str): column name
+        Returns:
+            name(str): cleaned column name
+
+        '''
 
         name = name.replace('(Y/N)','')\
                     .lower()\
                     .strip()\
                     .replace(' ','_')\
 
-
         return name
 
 
-
-
     def get_month(row):
+
+        '''
+        Cleaning of column month and extraction of month by regex
+        Args:
+            row(dataframe): row dataframe from apply function
+        Returns:
+            month or np.NaN
+
+        '''
 
         case_number = str(row['case_number']).replace(',','.').replace('-','.')
         date = str(row['date']).lower()
@@ -52,7 +70,17 @@ class clean():
 
 
     def clean_year(row):
-        
+
+        '''
+        Extraction of year by regex
+        Args:
+            row(dataframe): row dataframe from apply function
+        Returns:
+            year or np.NaN
+
+        '''
+
+
         date = row['date']
         year = row['year']
         
@@ -82,6 +110,16 @@ class clean():
 
 
     def was_provoked(row):
+
+        '''
+        Fills in new column with information whether was provoked or not
+        Args:
+            row(dataframe): row dataframe from apply function
+        Returns:
+            0, 1 or np.NaN
+
+        '''
+
         
         txt = row['type']
         
@@ -94,6 +132,16 @@ class clean():
 
 
     def clean_fatal(fatal):
+
+        '''
+        Fills in new column with information whether was fatal or not
+        Args:
+            row(dataframe): row dataframe from apply function
+        Returns:
+            0, 1 or np.NaN
+
+        '''
+
         fatal = str(fatal)
         fatal = fatal.lower()\
                     .strip()
@@ -109,16 +157,28 @@ class clean():
         
 
     def find_type_shark(txt):
+
+        '''
+        Extracts by regex type of shark specie.
+        Args:
+            row(dataframe): row dataframe from apply function
+        Returns:
+            shark_type(str)
+
+        '''
+
+
+
     
         valid_type_sharks = ['white','tiger','bull','mako','sandbar','lemon','whitetip','blue','galapagos','dusky','blacktip',
-                'silky','hammerhead','sevengill','sixgill','nurse','sand','carpet','wobbegong','basking','dog','spinner','whaler','sandtiger']
+                'silky','hammerhead','sevengill','sixgill','nurse','sand','carpet','wobbegong','basking','dog','spinner','sandtiger']
         
         valid_reef_sharks = ['whitetip','caribbean', 'grey', 'blacktip']
 
 
         txt = str(txt).lower()
         
-        match = re.search(r'([a-z]{2,25})\sshark',txt)
+        match = re.search(r'([a-z]{2,25})\sshark',txt) #try to find 'type + shark'
         try:
             match_group = match.group()
 
@@ -131,7 +191,7 @@ class clean():
                 shark_type = match.group().split()[0]
                 return shark_type
             
-            elif match.group().split()[0] == 'reef':
+            elif match.group().split()[0] == 'reef': #if type found is reef, looks for previous word to determine type of reef shark
                 match = re.search(r'([a-z]){2,25}\sreef\sshark',txt) 
                 try:
                     type_reef = match.group(0).split()[0]
@@ -145,7 +205,7 @@ class clean():
                         shark_type = type_reef + ' reef'
                         return shark_type
                     else:
-                        return 'reef'
+                        return 'reef' #if type of reef not found in dic, it returns just reef
                     
             else:
                 
@@ -155,15 +215,29 @@ class clean():
 
 class plot():
 
-    my_palette = {'USA': sns.color_palette()[0], 'AUSTRALIA':sns.color_palette()[1]}
+    '''
+    Collection of functions used for plotting
+    '''
 
-    def plot_cases(df, only_provoked = False):
+    my_palette = {'USA': sns.color_palette()[0], 'AUSTRALIA':sns.color_palette()[1]} #To make sure countries get same color all the time
+
+    def plot_cases(df, only_notprovoked = False):
+
+        '''
+        Plots a countplot with total cases and fatal cases per country. 
+        Args:
+            df(dataframe): dataframe
+            only_notprovoked(boolean): True for filtering just not provoked cases. By default: False
+        Returns:
+            Plot is shown in notebook
+
+        '''
 
         fig = plt.figure()
         ax = fig.add_subplot(111)
 
 
-        if only_provoked:
+        if only_notprovoked:
             df = df[df.was_provoked == 0]
             plt.suptitle('Not Provoked cases')
             filename = 'img/countplot_provoked_cases.png'
@@ -173,15 +247,17 @@ class plot():
             filename = 'img/countplot_all_cases.png'
 
         sns.countplot(x = df.country, hue= df.was_fatal)
+
+        #PLot customization
         ax.legend(labels = ['Not Fatal', 'Fatal'])
         plt.xlabel('') #To remove countries 
         plt.ylabel('Number of incidents') #To remove countries 
         ax.spines['right'].set_visible(False)
         ax.spines['top'].set_visible(False)
 
-        
         plt.title('In %, fatal cases overall')
 
+        #Add %
         for pos, country in enumerate(df.country.unique()):
             
             fatal = df[(df.country == country) & (df.was_fatal == 1)].was_fatal.count()
@@ -195,6 +271,17 @@ class plot():
 
     def get_coordin(area, coordin):
 
+        '''
+        Given an area, returns coordinates on map over plot
+        Args:
+            area(str): area of the country
+            coordin(int): 0 or 1. 0 for x-axis, 1 for y-axis
+        Returns:
+            result(int): coordinate in axis
+
+        '''
+
+        #values in dict by trial and error
         coordin_dict = {'Florida': (710,50), 'California': (45,245) , 'Hawaii': (375,40), 'South Carolina':(725,240) ,
                 'North Carolina':(760,290) , 'Texas':(450,120) , 'New Jersey': (760,375),'Oregon':(15,510), 
                 'New York': (780,410), 'Virginia': (750,345), 'New South Wales':(800,200) , 'Queensland': (750,450) ,
@@ -202,12 +289,23 @@ class plot():
                         'Torres Strait':(620,580) , 'Tasmania':(710,50) , 'Northern Territory': (450,580) }
 
         result = coordin_dict.get(area)[coordin]
-        
+  
 
         return result
 
         
     def plot_areas(df, country):
+
+        '''
+        Plots over a map a scatterplot with total cases and fatal cases per area. Size of dots based on cases. 
+        Args:
+            df(dataframe): dataframe
+            country(str): country
+        Returns:
+            Plot is shown in notebook
+
+        '''
+
 
         if country == 'USA':
             top = 10
@@ -281,6 +379,16 @@ class plot():
 
     def plot_season_trend(df):
 
+        '''
+        Plots a countplot with total cases per categorical month.  
+        Args:
+            df(dataframe): dataframe
+
+        Returns:
+            Plot is shown in notebook
+
+        '''
+
         fig, ax = plt.subplots()
 
         sns.countplot(x = df.month, hue= df.country)
@@ -302,6 +410,18 @@ class plot():
 
     def plot_attack_years(df, initial_year = 1950, ending_year = 2019):
 
+        '''
+        Plots a lineplot with total cases per year over a period of time.  
+        Args:
+            df(dataframe): dataframe
+            initial_year(int): start of period of time
+            ending_year(int): end of period of time
+            
+        Returns:
+            Plot is shown in notebook
+
+        '''
+
         fig, ax = plt.subplots()
 
         df_temp = df.fillna('no').groupby(['country','year']).month.count().reset_index() #fillna to count total values
@@ -322,6 +442,17 @@ class plot():
 
 
     def plot_species(df):
+
+        '''
+        Finds top species by country and plot a bar plot with % of appearance in cases.
+        And on same plot, includes a lineplot with rate of fatality for those species.  
+        Args:
+            df(dataframe): dataframe
+            
+        Returns:
+            Plot is shown in notebook
+
+        '''
 
         df_temp = df.groupby(['country','species']).count().groupby('country').year.sum() # this counts total cases
         df_temp2 = df.groupby(['country','species']).count().sort_values('year', ascending = False)\
